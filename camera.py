@@ -282,4 +282,3 @@ class Camera(object):
 
 
 
-
