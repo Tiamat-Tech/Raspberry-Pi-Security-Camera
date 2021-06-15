@@ -92,7 +92,14 @@ class Camera(object):
                 (minX, minY) = (np.inf, np.inf)
                 (maxX, maxY) = (-np.inf, -np.inf)
 
-           
+                # loop over the locations of motionDetector and accumulate the
+                # minimum and maximum locations of the bounding boxes
+                for l in locations_containing_motion:
+                    (x, y, w, h) = cv2.boundingRect(l)
+                    (minX, maxX) = (min(minX, x), max(maxX, x + w))
+                    (minY, maxY) = (min(minY, y), max(maxY, y + h))
+
+                # draw the bounding box
                 cv2.rectangle(frame, (minX, minY), (maxX, maxY),
                               (0, 0, 255), 3)
 
