@@ -109,4 +109,3 @@ class Camera(object):
         return jpeg.tobytes(), found_objects
 
 
-
