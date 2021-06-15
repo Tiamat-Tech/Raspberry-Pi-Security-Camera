@@ -105,7 +105,6 @@ def gen(camera):
 
 
 
-
 @app.route('/video_feed1')
 def video_feed1():
     return Response(gen(video_camera_1),
