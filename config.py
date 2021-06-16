@@ -65,5 +65,3 @@ class Config(object):
         print(self.__class__.__name__ + ' attributes: ')
         print(', '.join("%s: %s" % item for item in attributes.items()))
         print(self.__dict__)
-
-
