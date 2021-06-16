@@ -5,7 +5,7 @@
 
 # def send_email(image, config):
 #     msg_root = MIMEMultipart('related')
-#     msg_root['Subject'] = 'Security Update'
+    msg_root['Subject'] = 'Security Update'
     msg_root['From'] = config.sender_email_address
     msg_root['To'] = config.receiver_email_address
     msg_root.preamble = 'Raspberry pi security camera update'
