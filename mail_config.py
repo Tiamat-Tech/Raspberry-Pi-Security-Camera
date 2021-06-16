@@ -27,4 +27,3 @@
     smtp.login(config.sender_email_address, config.sender_email_password)
     smtp.sendmail(config.sender_email_address, config.receiver_email_address, msg_root.as_string())
     smtp.quit()
-
