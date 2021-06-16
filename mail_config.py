@@ -11,7 +11,7 @@
 #     msg_root.preamble = 'Raspberry pi security camera update'
 
 #     msg_alternative = MIMEMultipart('alternative')
-#     msg_root.attach(msg_alternative)
+    msg_root.attach(msg_alternative)
     msg_text = MIMEText('Smart security cam found object')
     msg_alternative.attach(msg_text)
 
