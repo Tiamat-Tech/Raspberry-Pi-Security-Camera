@@ -16,7 +16,7 @@
 #     msg_alternative.attach(msg_text)
 
 #     msg_text = MIMEText('<img src="cid:image1">', 'html')
-#     msg_alternative.attach(msg_text)
+    msg_alternative.attach(msg_text)
 
     msg_image = MIMEImage(image)
     msg_image.add_header('Content-ID', '<image1>')
