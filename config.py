@@ -46,19 +46,6 @@ class Config(object):
     classifier = None
     classifier2 = None
 
-    def set_classifier(self, classifier_name):
-        self.classifier_name = classifier_name
-        if classifier_name == 'motion_detector':
-            self.classifier = None
-            self.classifier2 = None
-        else:
-            self.classifier = cv2.CascadeClassifier(self.classifierNameLocationDict[classifier_name]['location'])
-            self.classifier2 = cv2.CascadeClassifier(self.classifierNameLocationDict[classifier_name]['location'])
-
-    email_send_interval = 60
-    sender_email_address = secret.from_email
-    sender_email_password = secret.from_email_password
-    receiver_email_address = secret.to_email
 
     def to_string(self):
         attributes = vars(self)
