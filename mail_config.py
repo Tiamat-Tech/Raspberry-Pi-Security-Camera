@@ -8,7 +8,7 @@
 #     msg_root['Subject'] = 'Security Update'
 #     msg_root['From'] = config.sender_email_address
     msg_root['To'] = config.receiver_email_address
-#     msg_root.preamble = 'Raspberry pi security camera update'
+    msg_root.preamble = 'Raspberry pi security camera update'
 
     msg_alternative = MIMEMultipart('alternative')
     msg_root.attach(msg_alternative)
