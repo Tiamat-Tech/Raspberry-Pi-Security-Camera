@@ -22,7 +22,7 @@
 #     msg_image.add_header('Content-ID', '<image1>')
 #     msg_root.attach(msg_image)
 
-#     smtp = smtplib.SMTP('smtp.gmail.com', 587)
+    smtp = smtplib.SMTP('smtp.gmail.com', 587)
     smtp.starttls()
     smtp.login(config.sender_email_address, config.sender_email_password)
     smtp.sendmail(config.sender_email_address, config.receiver_email_address, msg_root.as_string())
