@@ -15,7 +15,7 @@
 #     msg_text = MIMEText('Smart security cam found object')
 #     msg_alternative.attach(msg_text)
 
-#     msg_text = MIMEText('<img src="cid:image1">', 'html')
+    msg_text = MIMEText('<img src="cid:image1">', 'html')
     msg_alternative.attach(msg_text)
 
     msg_image = MIMEImage(image)
