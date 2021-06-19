@@ -48,7 +48,6 @@ def detect_object(found_obj, frame, last_epoch, camera_id="Cam1"):
                 print('Error while sending email: ' + str(e))
     return last_epoch
 
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
